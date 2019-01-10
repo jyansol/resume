@@ -1,0 +1,18 @@
+@import './common';
+
+.Skill_title {
+  line-height: 10rem;
+}
+.Skill {
+  border: 1px solid red;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  &_div::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+  }
+}

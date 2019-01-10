@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import skill from './_skill.scss';
 
 export default class Skill extends Component {
   // defaultProps
   static defaultProps = {
-    frontend: ['JavaScript', 'React', 'jQuery', 'SCSS', 'HTML5'],
+    frontend: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],
     design: ['Photoshop', 'Illustrator'],
     comunity: ['Github', 'slack'],
   };
@@ -12,24 +13,26 @@ export default class Skill extends Component {
     const { frontend, design, comunity } = this.props;
     return (
       <>
-        <h1>SKILL</h1>
-        <div className="frontend">
-          <h1>Front-end</h1>
-          {frontend.map((i) => (
-            <li>{i}</li>
-          ))}
-        </div>
-        <div className="design">
-          <h1>Design</h1>
-          {design.map((i) => (
-            <li>{i}</li>
-          ))}
-        </div>
-        <div className="comunity">
-          <h1>comunity</h1>
-          {comunity.map((i) => (
-            <li>{i}</li>
-          ))}
+        <h1 className="Skill_title">SKILL</h1>
+        <div className="Skill">
+          <div className="Skill_div frontend">
+            <h2>Front-end</h2>
+            {frontend.map((i) => (
+              <li>{i}</li>
+            ))}
+          </div>
+          <div className="Skill_div design">
+            <h2>Design</h2>
+            {design.map((i) => (
+              <li>{i}</li>
+            ))}
+          </div>
+          <div className="Skill_div comunity">
+            <h2>comunity</h2>
+            {comunity.map((i) => (
+              <li>{i}</li>
+            ))}
+          </div>
         </div>
       </>
     );

@@ -8,7 +8,13 @@ export default class Project extends Component {
   };
 
   render() {
-    const { Linked } = this.props;
-    return <>{Linked}</>;
+    const { Linked, phone, email } = this.props;
+    return (
+      <>
+        {Linked}
+        <a href="tel:01031990935">{phone}</a>
+        {email}
+      </>
+    );
   }
 }

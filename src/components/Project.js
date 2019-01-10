@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
+import grim from '../images/grim.png';
+import baseball from '../images/baseball.png';
+import baeminchan from '../images/baeminchan.png';
 
 export default class Project extends Component {
-  static defaultProps = {
-    image: ['../images/baseball.png', '../images/grim.png'],
-  };
   render() {
-    const { image } = this.props;
     return (
       <>
         <h1>Project</h1>
-        {image.map((i) => (
-          <img src={i} alt="project" />
-        ))}
+        <div className="Project">
+          <img src={baeminchan} alt="" />
+          <img src={grim} alt="" />
+          <img src={baseball} alt="" />
+        </div>
       </>
     );
   }

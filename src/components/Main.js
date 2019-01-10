@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import Who from './Who';
 import Skill from './Skill';
 import Project from './Project';
-import common from './components/_common.scss';
+import Linked from './Linked';
+
+import common from './_common.scss';
+import background from '../images/background.png';
 
 export default class Main extends Component {
   constructor(props) {
@@ -11,14 +14,13 @@ export default class Main extends Component {
     this.state = {};
   }
 
-  handleData = () => {};
-
   render() {
     return (
       <>
         <Who />
         <Skill />
         <Project />
+        <Linked />
       </>
     );
   }

@@ -1,4 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main {
+  padding-top: 120px;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: #fff;
+  &_name {
+    font-size: 4rem;
+  }
+  &_contents {
+    margin-top: 25px;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+  }
+}
+
 img {
-  width: 200px;
+  width: 350px;
   height: 250px;
+  margin-right: 10px;
 }
