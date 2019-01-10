@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import Who from './Who';
+import Skill from './Skill';
+import Project from './Project';
+import common from './components/_common.scss';
 
 export default class Main extends Component {
-  // defaultProps
-  static defaultProps = {
-    products: [],
-  };
   constructor(props) {
     super(props);
 
@@ -15,9 +15,11 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div>
-        <h1>This is my resume</h1>
-      </div>
+      <>
+        <Who />
+        <Skill />
+        <Project />
+      </>
     );
   }
 }
