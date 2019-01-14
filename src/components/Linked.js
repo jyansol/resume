@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import linked from './_Linked.scss';
 
 export default class Project extends Component {
   static defaultProps = {
@@ -11,9 +12,12 @@ export default class Project extends Component {
     const { Linked, phone, email } = this.props;
     return (
       <>
-        {Linked}
-        <a href="tel:01031990935">{phone}</a>
-        {email}
+        <div className="Linked">
+          <h1>Contact</h1>
+          {Linked}
+          <a href="tel:01031990935">{phone}</a>
+          {email}
+        </div>
       </>
     );
   }
