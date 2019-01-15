@@ -7,7 +7,6 @@ export default class Who extends Component {
         <div className="main">
           <span>Hello, zansolword!</span>
           <h1 className="main_name">Ji Hahn Sol</h1>
-          <h2>알파고도 대체할 수 없는 프론트엔드 개발자</h2>
           <p className="main_contents">
             <br />
             구글의 알파고처럼 인공지능 로봇이 차별적인 시스템으로 사용자에게 혁신적인 가치를 제공해 줄 수는 있지만,

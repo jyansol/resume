@@ -7,14 +7,35 @@ export default class Skill extends Component {
     frontend: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],
     design: ['Photoshop', 'Illustrator'],
     comunity: ['Github', 'slack'],
+    tutorial: ['JAVA', 'Nodejs', 'Android Studio'],
   };
 
   render() {
-    const { frontend, design, comunity } = this.props;
+    const { frontend, design, comunity, tutorial } = this.props;
+    const text = `
+        this.state = {\n
+          role: ['Front-end-Developer'],\n
+          stack: [{\n
+            frontEnd: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],\n
+            design: ['Photoshop', 'Illustrator'],\n
+            comunity: ['Github', 'slack'],\n
+            tutorial: ['JAVA', 'Nodejs', 'Android Studio'],\n
+          }]\n
+        }\n
+      `;
     return (
       <>
         <h1 className="Skill_title">SKILL</h1>
-        <div className="Skill">
+        <div className="Skill_code">
+          {text.split('\n').map((t) => (
+            <span>
+              {t}
+              <br />
+            </span>
+          ))}
+        </div>
+
+        {/* <div className="Skill">
           <div className="Skill_div frontend">
             <h2>Front-end</h2>
             {frontend.map((i) => (
@@ -28,12 +49,18 @@ export default class Skill extends Component {
             ))}
           </div>
           <div className="Skill_div comunity">
-            <h2>comunity</h2>
+            <h2>Comunity</h2>
             {comunity.map((i) => (
               <li>{i}</li>
             ))}
           </div>
-        </div>
+          <div className="Skill_div tutorial">
+            <h2>Tutorial</h2>
+            {tutorial.map((i) => (
+              <li>{i}</li>
+            ))}
+          </div>
+        </div> */}
       </>
     );
   }
