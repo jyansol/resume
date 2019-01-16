@@ -4,63 +4,55 @@ import skill from './_skill.scss';
 export default class Skill extends Component {
   // defaultProps
   static defaultProps = {
-    frontend: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],
-    design: ['Photoshop', 'Illustrator'],
-    comunity: ['Github', 'slack'],
-    tutorial: ['JAVA', 'Nodejs', 'Android Studio'],
+    // obj: {
+    //   role: ['Front-end-Developer'],
+    //   stack: [
+    //     {
+    //       frontEnd: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],
+    //     },
+    //     { design: ['Photoshop', 'Illustrator'] },
+    //     { comunity: ['Github', 'slack'] },
+    //     { tutorial: ['JAVA', 'Nodejs', 'Android Studio'] },
+    //   ],
+    // },
+    line: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    frontEnd: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],
   };
 
   render() {
-    const { frontend, design, comunity, tutorial } = this.props;
-    const text = `
-        this.state = {\n
-          role: ['Front-end-Developer'],\n
-          stack: [{\n
-            frontEnd: ['JavaScript ES6', 'React', 'jQuery', 'SCSS', 'HTML5'],\n
-            design: ['Photoshop', 'Illustrator'],\n
-            comunity: ['Github', 'slack'],\n
-            tutorial: ['JAVA', 'Nodejs', 'Android Studio'],\n
-          }]\n
-        }\n
-      `;
+    const { obj, frontEnd, line } = this.props;
+
     return (
       <>
-        <h1 className="Skill_title">SKILL</h1>
-        <div className="Skill_code">
+        {/* <div className="Skill_code">
           {text.split('\n').map((t) => (
-            <span>
+            <span className="Skill_text">
               {t}
               <br />
             </span>
           ))}
-        </div>
-
-        {/* <div className="Skill">
-          <div className="Skill_div frontend">
-            <h2>Front-end</h2>
-            {frontend.map((i) => (
-              <li>{i}</li>
-            ))}
-          </div>
-          <div className="Skill_div design">
-            <h2>Design</h2>
-            {design.map((i) => (
-              <li>{i}</li>
-            ))}
-          </div>
-          <div className="Skill_div comunity">
-            <h2>Comunity</h2>
-            {comunity.map((i) => (
-              <li>{i}</li>
-            ))}
-          </div>
-          <div className="Skill_div tutorial">
-            <h2>Tutorial</h2>
-            {tutorial.map((i) => (
-              <li>{i}</li>
-            ))}
-          </div>
         </div> */}
+        {/* 줄번호 출력 */}
+        <div className="Skill">
+          <h1 className="Skill__title title">SKILL</h1>
+          <div class="Skill__div">
+            {/* 코드라인 */}
+            <div className="Skill__line">
+              {line.map((l) => (
+                <li>{l}</li>
+              ))}
+            </div>
+            {/* 코드출력 */}
+
+            <div className="Skill__code_first">
+              <span className="Skill__keys">stack :</span>[
+              {frontEnd.map((k) => (
+                <li className="Skill__list">'{k}'</li>
+              ))}
+              ],
+            </div>
+          </div>
+        </div>
       </>
     );
   }

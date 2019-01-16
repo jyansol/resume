@@ -13,7 +13,7 @@ export default class Project extends Component {
     return (
       <>
         <div className="Linked">
-          <h1>Contact</h1>
+          <h1 className="title">Contact</h1>
           {Linked}
           <a href="tel:01031990935">{phone}</a>
           {email}

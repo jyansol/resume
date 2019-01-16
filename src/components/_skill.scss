@@ -1,9 +1,35 @@
 @import './common';
 
+$vscodebg: #1e1e1e;
+$linecolor: #7f7f7f;
+$keyscolor: #9cdcfe;
+$arraycolor: #f8d700;
+$valuecolor: #ce9178;
+
 .Skill {
-  &_code {
-    font-size: 0.8rem;
-    text-align: left;
-    white-space: pre;
+  background-color: $vscodebg;
+  padding: 10px;
+  font-weight: 600;
+  &__div {
+    display: flex;
+  }
+  &__code_first {
+    color: $arraycolor;
+  }
+  &__line {
+    display: flex;
+    flex-direction: column;
+    color: $linecolor;
+  }
+  &__keys {
+    color: $keyscolor;
+  }
+  &__list {
+    color: $valuecolor;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  &__list:nth-child(n + 3)::before {
+    content: ',';
   }
 }

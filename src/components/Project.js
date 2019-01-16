@@ -7,7 +7,7 @@ export default class Project extends Component {
   render() {
     return (
       <>
-        <h1>Project</h1>
+        <h1 className="title">Project</h1>
         <div className="Project">
           <img src={baeminchan} alt="" />
           <img src={grim} alt="" />
