@@ -2,27 +2,54 @@
 
 $vscodebg: #1e1e1e;
 $linecolor: #7f7f7f;
-$keyscolor: #9cdcfe;
+$skycolor: #9cdcfe;
 $arraycolor: #f8d700;
 $valuecolor: #ce9178;
+$blue: #4b9cd6;
+$comments: #4d9e4d;
+
+.padding {
+  padding-left: 20px;
+}
 
 .Skill {
   background-color: $vscodebg;
   padding: 10px;
   font-weight: 600;
+  &__title {
+    color: #fefefe;
+  }
   &__div {
     display: flex;
   }
-  &__code_first {
+  &__comments {
+    margin-bottom: 24px;
+  }
+  &__comments-text {
+    color: $comments;
+  }
+  &__blue {
+    color: $blue;
+  }
+  &__code {
+    line-height: 1.5rem;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     color: $arraycolor;
   }
+  &__code_first {
+    color: white;
+  }
   &__line {
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
     color: $linecolor;
   }
-  &__keys {
-    color: $keyscolor;
+  &__skyblue {
+    color: $skycolor;
   }
   &__list {
     color: $valuecolor;
@@ -31,5 +58,6 @@ $valuecolor: #ce9178;
   }
   &__list:nth-child(n + 3)::before {
     content: ',';
+    color: white;
   }
 }
