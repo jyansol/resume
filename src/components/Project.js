@@ -5,14 +5,14 @@ import baeminchan from '../images/baeminchan.png';
 import project from './_project.scss';
 
 export default class Project extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      toggle: false,
-    };
-  }
+  //   this.toggle = this.toggle.bind(this);
+  //   this.state = {
+  //     toggle: false,
+  //   };
+  // }
 
   render() {
     const display = {
