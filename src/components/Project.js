@@ -5,22 +5,7 @@ import baeminchan from '../images/baeminchan.png';
 import project from './_project.scss';
 
 export default class Project extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.toggle = this.toggle.bind(this);
-  //   this.state = {
-  //     toggle: false,
-  //   };
-  // }
-
   render() {
-    const display = {
-      display: 'block',
-    };
-    const hide = {
-      display: 'none',
-    };
     return (
       <>
         <div class="Project">
