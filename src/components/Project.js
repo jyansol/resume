@@ -29,8 +29,18 @@ export default class Project extends Component {
         <div class="Project">
           <h1 className="title">Project</h1>
           <div className="Project__img">
-            {/* <Modal onClick={this.openModal} /> */}
-            <Modal onClick={this.openModal} isOpen={this.state.isModalOpen} onClose={this.closeModal} />
+            <figure class="effect-bubba">
+              <img src={grim} alt="" />
+              <figcaption>
+                <h2>
+                  Fresh <span>Bubba</span>
+                </h2>
+                <p>Bubba likes to appear out of thin air.</p>
+                <a href="#">View more</a>
+              </figcaption>
+            </figure>
+
+            <Modal isOpen={this.state.isModalOpen} onClose={this.closeModal} />
             {/* <a onClick={this.openModal}>Open the modal</a>
             <img src={grim} alt="" />
             <img src={baseball} alt="" /> */}
