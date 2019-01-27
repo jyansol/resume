@@ -6,10 +6,11 @@ export default class Modal extends Component {
     const { isOpen, onClose } = this.props;
     return (
       <>
-        <div className={isOpen ? 'modal modal--is-open' : 'modal'}>
+        {/* <div className={isOpen ? 'modal modal--is-open' : 'modal'}>
           <button onClick={onClose}>close</button>
           <p>Hello! I am a modal.</p>
-        </div>
+        </div> */}
+        <h1>디테일뷰</h1>
       </>
     );
   }

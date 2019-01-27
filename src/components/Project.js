@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+import project from './_project.scss';
+
 import grim from '../images/grim.png';
 import baseball from '../images/baseball.png';
 import baeminchan from '../images/baeminchan.png';
-import project from './_project.scss';
 import Modal from './Modal.js';
 
 export default class Project extends Component {
@@ -26,21 +29,12 @@ export default class Project extends Component {
   render() {
     return (
       <>
-        <div class="Project">
+        <div className="Project">
           <h1 className="title">Project</h1>
           <div className="Project__img">
-            <figure class="effect-bubba">
-              <img src={grim} alt="" />
-              <figcaption>
-                <h2>
-                  Fresh <span>Bubba</span>
-                </h2>
-                <p>Bubba likes to appear out of thin air.</p>
-                <a href="#">View more</a>
-              </figcaption>
-            </figure>
+            <Link to="/detailview/">클릭</Link>
 
-            <Modal isOpen={this.state.isModalOpen} onClose={this.closeModal} />
+            {/* <Modal isOpen={this.state.isModalOpen} onClose={this.closeModal} /> */}
             {/* <a onClick={this.openModal}>Open the modal</a>
             <img src={grim} alt="" />
             <img src={baseball} alt="" /> */}
