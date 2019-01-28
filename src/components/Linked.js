@@ -13,10 +13,24 @@ export default class Project extends Component {
     return (
       <>
         <div className="Linked">
-          <h1 className="title">Contact</h1>
-          {Linked}
-          <a href="tel:01031990935">{phone}</a>
-          {email}
+          <h1 className="title title-effect">Contact</h1>
+          <ul>
+            <li>
+              <a href="#">이메일</a>
+            </li>
+            <li>
+              <a href="#">연락처</a>
+            </li>
+            <li>
+              <a href="#">깃헙</a>
+            </li>
+            <li>
+              <a href="#">티스토리</a>
+            </li>
+            <li>
+              <a href="#">코드펜</a>
+            </li>
+          </ul>
         </div>
       </>
     );

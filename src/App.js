@@ -10,7 +10,7 @@ class App extends Component {
       <>
         <BrowserRouter>
           <div className="App">
-            <Main />
+            <Route exact path="/" component={Main} />
             <Route path="/detailview/" component={Modal} />
           </div>
         </BrowserRouter>

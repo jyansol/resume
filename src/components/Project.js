@@ -7,37 +7,30 @@ import grim from '../images/grim.png';
 import baseball from '../images/baseball.png';
 import baeminchan from '../images/baeminchan.png';
 import Modal from './Modal.js';
+import { link } from 'fs';
 
 export default class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isModalOpen: false,
-    };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({ isModalOpen: true });
-  }
-
-  closeModal() {
-    this.setState({ isModalOpen: false });
-  }
+  static defaultProps = {
+    img: [baeminchan, grim, baseball],
+  };
 
   render() {
+    const { img } = this.props;
+    console.log(img);
     return (
       <>
         <div className="Project">
-          <h1 className="title">Project</h1>
+          <h1 className="title title-effect">Project</h1>
           <div className="Project__img">
-            <Link to="/detailview/">클릭</Link>
-
-            {/* <Modal isOpen={this.state.isModalOpen} onClose={this.closeModal} /> */}
-            {/* <a onClick={this.openModal}>Open the modal</a>
-            <img src={grim} alt="" />
-            <img src={baseball} alt="" /> */}
+            {img.map((i) => (
+              <>
+                <div className="holder">
+                  <Link to="/detailview/">
+                    <img src={i} alt="projectImage" />
+                  </Link>
+                </div>
+              </>
+            ))}
           </div>
         </div>
       </>
