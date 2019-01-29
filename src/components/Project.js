@@ -14,8 +14,26 @@ export default class Project extends Component {
     img: [baeminchan, grim, baseball],
   };
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      project: [],
+    };
+  }
+
+  handleChange() {
+    const { project } = this.state;
+    const { img } = this.props;
+    this.setState({
+      project: img,
+    });
+  }
+
   render() {
     const { img } = this.props;
+    const { project } = this.state;
+    console.log('p', project);
     console.log(img);
     return (
       <>

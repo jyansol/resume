@@ -14,10 +14,11 @@ $comments: #4d9e4d;
 
 .Skill {
   background-color: $vscodebg;
-  padding: 10px;
+  padding: 30px;
   font-weight: 600;
   &__title {
     color: #fefefe;
+    margin-bottom: 20px;
   }
   &__div {
     display: flex;
