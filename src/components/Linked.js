@@ -13,7 +13,6 @@ export default class Project extends Component {
     return (
       <>
         <div className="Linked">
-          <h1 className="title title-effect">Contact</h1>
           <ul>
             <li>
               <a href="#">이메일</a>
@@ -25,7 +24,7 @@ export default class Project extends Component {
               <a href="#">깃헙</a>
             </li>
             <li>
-              <a href="#">티스토리</a>
+              <a href="#">velog</a>
             </li>
             <li>
               <a href="#">코드펜</a>

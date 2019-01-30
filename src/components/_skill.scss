@@ -66,7 +66,13 @@ $underbar: #2d6cff;
     background-color: $underbar;
   }
   &__ol {
+    color: white;
     display: flex;
-    justify-items: right;
+    justify-content: flex-end;
+    padding: 3px;
+  }
+  &__ol li {
+    margin-right: 10px;
+    font-size: 0.8rem;
   }
 }
