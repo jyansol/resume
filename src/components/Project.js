@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 import project from './_project.scss';
 
@@ -14,36 +14,17 @@ export default class Project extends Component {
     img: [baeminchan, grim, baseball],
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      project: [],
-    };
-  }
-
-  handleChange() {
-    const { project } = this.state;
-    const { img } = this.props;
-    this.setState({
-      project: img,
-    });
-  }
-
   render() {
     const { img } = this.props;
-    const { project } = this.state;
-    console.log('p', project);
-    console.log(img);
     return (
       <>
         <div className="Project">
           <h1 className="title title-effect">Project</h1>
           <div className="Project__img">
-            {img.map((i) => (
+            {img.map((i, index) => (
               <>
                 <div className="holder">
-                  <Link to="/detailview/">
+                  <Link to={`/detailview/${index}`}>
                     <img src={i} alt="projectImage" />
                   </Link>
                 </div>

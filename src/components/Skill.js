@@ -81,6 +81,15 @@ export default class Skill extends Component {
             </div>
           </div>
         </div>
+        <div className="Skill__underbar">
+          <ol className="Skill__ol">
+            <li>UTF-8</li>
+            <li>JavaScript React</li>
+            <li>ESLint</li>
+            <li>smile</li>
+            <li>bell</li>
+          </ol>
+        </div>
       </>
     );
   }

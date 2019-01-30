@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+
 import Modal from './components/Modal';
-import './App.css';
 import Main from './components/Main';
+
+import './App.css';
 
 class App extends Component {
   render() {
@@ -10,8 +12,8 @@ class App extends Component {
       <>
         <BrowserRouter>
           <div className="App">
+            <Modal />
             <Route exact path="/" component={Main} />
-            <Route path="/detailview/" component={Modal} />
           </div>
         </BrowserRouter>
       </>

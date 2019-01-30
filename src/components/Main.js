@@ -5,6 +5,7 @@ import Who from './Who';
 import Skill from './Skill';
 import Project from './Project';
 import Linked from './Linked';
+import Modal from './Modal';
 
 import common from './_common.scss';
 import background from '../images/background.png';

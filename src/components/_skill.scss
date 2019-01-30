@@ -7,6 +7,7 @@ $arraycolor: #f8d700;
 $valuecolor: #ce9178;
 $blue: #4b9cd6;
 $comments: #4d9e4d;
+$underbar: #2d6cff;
 
 .padding {
   padding-left: 20px;
@@ -60,5 +61,12 @@ $comments: #4d9e4d;
   &__list:nth-child(n + 3)::before {
     content: ',';
     color: white;
+  }
+  &__underbar {
+    background-color: $underbar;
+  }
+  &__ol {
+    display: flex;
+    justify-items: right;
   }
 }
