@@ -1,18 +1,125 @@
 @import './common.scss';
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 50%;
+.Baeminchan {
+  text-align: center;
   height: 100vh;
-  width: 800px;
-  overflow: auto;
-  background-color: white;
+  &__bg {
+    padding: 100px;
+    background: url('../images/chan1.png') no-repeat;
+    background-position: 80% 43%;
+  }
+  &__title {
+    font-size: 3.7rem;
+    margin-bottom: 20px;
+    color: #35c0bb;
+    text-shadow: 4px 3px 3px rgb(107, 107, 107);
+  }
+  &__img {
+    width: 90%;
+    box-shadow: 1px 3px 8px 4px rgb(195, 195, 195);
+    margin-bottom: 150px;
+  }
+  &__h2 {
+    text-align: left;
+  }
+  &__ol {
+    margin-left: 20px;
+    text-align: left;
+  }
+  &__ol li {
+    line-height: 1.5rem;
+  }
+  &__ol li::before {
+    content: '+ ';
+    color: tomato;
+  }
+  &__article {
+    background-color: #ececec;
+    padding: 40px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
 }
 
-.modal.modal--is-open {
-  display: block;
-  border: 1px solid green;
+.Grim {
+  text-align: center;
+  height: 100vh;
+  &__bg {
+    padding: 100px;
+    background: url('../images/grim.jpg') no-repeat;
+    background-position: 20% 43%;
+  }
+  &__title {
+    font-size: 3.7rem;
+    margin-bottom: 20px;
+    color: #181818;
+    text-shadow: 4px 3px 3px rgb(107, 107, 107);
+  }
+  &__img {
+    width: 90%;
+    box-shadow: 1px 3px 8px 4px rgb(195, 195, 195);
+    margin-bottom: 150px;
+  }
+  &__h2 {
+    text-align: left;
+  }
+  &__ol {
+    margin-left: 20px;
+    text-align: left;
+  }
+  &__ol li {
+    line-height: 1.5rem;
+  }
+  &__ol li::before {
+    content: '+ ';
+    color: tomato;
+  }
+  &__article {
+    background-color: #ececec;
+    padding: 40px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+}
+
+.Baseball {
+  text-align: center;
+  height: 100vh;
+  &__bg {
+    padding: 100px;
+    background: url('../images/ball1.png') no-repeat;
+    background-size: 300%;
+    background-position: 50% 74%;
+  }
+  &__title {
+    font-size: 3.7rem;
+    margin-bottom: 20px;
+    color: #181818;
+    text-shadow: 4px 3px 3px rgb(75, 75, 75);
+  }
+  &__img {
+    width: 90%;
+    box-shadow: 1px 3px 8px 4px rgb(195, 195, 195);
+    margin-bottom: 150px;
+  }
+  &__h2 {
+    text-align: left;
+  }
+  &__ol {
+    margin-left: 20px;
+    text-align: left;
+  }
+  &__ol li {
+    line-height: 1.5rem;
+  }
+  &__ol li::before {
+    content: '+ ';
+    color: tomato;
+  }
+  &__article {
+    background-color: #ececec;
+    padding: 40px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
 }

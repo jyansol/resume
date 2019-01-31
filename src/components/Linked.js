@@ -13,22 +13,34 @@ export default class Project extends Component {
     return (
       <>
         <div className="Linked">
-          <ul>
+          <ul className="Linked__ul">
             <li>
-              <a href="#">이메일</a>
+              <span className="span">EMAIL ADDRESS</span>
+              <br />
+              <a href="mailto:hahn0406@gmail.com">hahn0406@gmail.com</a>
             </li>
             <li>
-              <a href="#">연락처</a>
+              <span className="span">PHONE NUMBER</span>
+              <br />
+              <a href="tel:010-3199-0935">010 3199 0935</a>
             </li>
-            <li>
-              <a href="#">깃헙</a>
-            </li>
-            <li>
-              <a href="#">velog</a>
-            </li>
-            <li>
-              <a href="#">코드펜</a>
-            </li>
+            <div className="Linked__div">
+              <li>
+                <a href="https://github.com/jyansol" target="_blank">
+                  <span className="span Linked__a">Github</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://velog.io/@zansol" target="_blank">
+                  <span className="span Linked__a">VELOG</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://codepen.io/jyansol/" target="_blank">
+                  <span className="span Linked__a">CODEPEN</span>
+                </a>
+              </li>
+            </div>
           </ul>
         </div>
       </>

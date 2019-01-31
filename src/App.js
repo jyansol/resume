@@ -5,6 +5,7 @@ import Modal from './components/Modal';
 import Main from './components/Main';
 
 import './App.css';
+import Project from './components/Linked';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <div className="App">
             <Modal />
             <Route exact path="/" component={Main} />
+            <Route exact path="/project/" component={Project} />
           </div>
         </BrowserRouter>
       </>

@@ -3,11 +3,10 @@ import { Link, Route } from 'react-router-dom';
 
 import project from './_project.scss';
 
-import grim from '../images/grim.png';
-import baseball from '../images/baseball.png';
+import grim from '../images/grim1.png';
+import baseball from '../images/ball1.png';
 import baeminchan from '../images/baeminchan.png';
 import Modal from './Modal.js';
-import { link } from 'fs';
 
 export default class Project extends Component {
   static defaultProps = {

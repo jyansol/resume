@@ -86,8 +86,6 @@ export default class Skill extends Component {
             <li>UTF-8</li>
             <li>JavaScriptReact</li>
             <li>ESLint</li>
-            <li>smile</li>
-            <li>bell</li>
           </ol>
         </div>
       </>

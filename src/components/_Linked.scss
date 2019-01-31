@@ -1,5 +1,29 @@
 @import './common.scss';
 
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
 .Linked {
-  margin: 120px 0;
+  background-color: #f4ba40;
+  padding: 20px;
+  &__a:hover {
+    color: #b6861e;
+  }
+  &__ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  &__div {
+    display: flex;
+    justify-content: center;
+  }
 }

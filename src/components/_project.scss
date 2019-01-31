@@ -13,14 +13,14 @@
   transition: opacity 1s, transform 0.7s ease-in;
 }
 
-img:hover {
+.holder img:hover {
   opacity: 1;
   transform: scale(1.1);
   box-shadow: 1px 3px 8px 4px rgb(195, 195, 195);
 }
 
 .Project {
-  margin-top: 100px;
+  padding: 100px 0 100px 0;
   &__img {
     height: 100%;
     display: flex;
