@@ -57,6 +57,27 @@ $mouse-width: 12px;
 }
 
 @media (max-width: 320px) {
+  .Baeminchan {
+    text-align: center;
+    height: 100vh;
+    &__bg {
+      padding: 100px;
+      background: url('../images/chan1.png') no-repeat;
+      background-position: 65% 50%;
+    }
+    &__title {
+      display: none;
+    }
+    &__info::before {
+      content: 'Baeminchan Copy';
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      margin-left: -50px;
+      color: #35c0bb;
+      text-shadow: 4px 3px 3px rgb(107, 107, 107);
+    }
+  }
   .main {
     &__name {
       display: none;
