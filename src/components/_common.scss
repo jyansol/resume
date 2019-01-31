@@ -17,6 +17,12 @@ $mouse-width: 12px;
       content: '10';
     }
   }
+  .main::before {
+    content: 'JI HAHN SOL';
+    color: #313131;
+    position: relative;
+    top: 150px;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -42,6 +48,7 @@ $mouse-width: 12px;
   }
   .main::before {
     content: 'JI HAHN SOL';
+    line-height: 10rem;
     font-size: 3rem;
   }
   .scroll-down {
@@ -58,14 +65,15 @@ $mouse-width: 12px;
       display: none;
     }
   }
-  .main::after {
-    // content: 'JI HAHN SOL';
-    font-size: 3rem;
-  }
+
   .scroll-down {
     width: 200px;
   }
-
+  .main::before {
+    content: 'JI HAHN SOL';
+    position: relative;
+    top: 0;
+  }
   .holder {
     width: 250px;
     height: 150px;
