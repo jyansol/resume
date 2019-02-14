@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Project from './Project';
 
 export default class Back extends Component {
+  componentDidUpdate() {
+    window.history.back();
+  }
   render() {
     return (
       <div>
